@@ -5,4 +5,10 @@ class ApplicationController < ActionController::Base
   include CurrentUserConcern
   include DefaultPageContent
 
+
+
+  
+
 end
+
+

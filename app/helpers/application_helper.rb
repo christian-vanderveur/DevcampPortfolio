@@ -16,4 +16,7 @@ module ApplicationHelper
 
      end 
   end
+  def copyright_generator
+    VanderveurViewTool::Renderer.copyright 'Christian Vanderveur', 'All rights reserved'
+  end
 end
