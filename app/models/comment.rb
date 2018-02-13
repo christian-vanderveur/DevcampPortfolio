@@ -3,4 +3,6 @@ class Comment < ApplicationRecord
   belongs_to :blog
 
   validates :content, presence: true, length: {minimum: 7, maximum: 997}
+
+  ater_create_commit { CommentBroadcastJob.perform_later(self) }
 end
