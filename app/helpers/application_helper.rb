@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    VanderveurViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
+    VanderveurViewTool::Renderer.copyright 'Christian VanderVeur', 'All rights reserved'
   end
 
   def nav_items
@@ -71,7 +71,7 @@ module ApplicationHelper
     end
   end
   def alert_generator msg
-    js add_gritter(msg, title: "Jordan Hudgens Portfolio", sticky: false)
+    js add_gritter(msg, title: "Christian VanderVeur's Portfolio", sticky: false)
   end
 
 end

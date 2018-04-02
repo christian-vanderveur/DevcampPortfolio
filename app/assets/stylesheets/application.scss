@@ -138,7 +138,7 @@ body {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: relative;
     bottom: 0;
   }
   /* Start the vertical centering */
@@ -200,12 +200,13 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
+  background: image-url('home.png') no-repeat;
   background-size: cover;
 }
 
 .app-footer {
   color: white;
+  margin-top: 10%;
 }
 
 .tech-news {
@@ -221,9 +222,15 @@ body {
   color: green;
 }
 
+.tech-news-container {
+  margin-top:8%;
+  margin-bottom:10%;
+}
+
 .app-card-container {
   color: black;
   text-align: left;
+  margin-top: 15%;
 }
 
 .app-card-container > .card {
@@ -245,4 +252,12 @@ body {
 .skill {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.push {
+  height: 50px;
+}
+
+.footer {
+  height: 50px;
 }
