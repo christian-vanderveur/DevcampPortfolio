@@ -6,6 +6,14 @@ body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
 }
 
+.portfolio_link {
+  color: #a39a6e;
+}
+
+.portfolio_link:hover {
+  color: #f2e39d;
+}
+
 .navbar {
   margin-bottom: 0;
 }
