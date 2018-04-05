@@ -13,7 +13,7 @@
               <h4><%= skill.title %></h4>
               <div class="progress">
                 <div
-                  class="progress-bar progress-bar-striped bg-warning"
+                  class="progress-bar bg"
                   role="progressbar"
                   aria-valuenow="<%= skill.percent_utilized %>"
                   aria-valuemax="100"
@@ -55,7 +55,8 @@
           >
             Education
           </button>
-          <button
+
+            <button
             class="btn btn-primary"
             type="button"
             data-toggle="collapse"
@@ -63,34 +64,41 @@
             aria-expanded="false"
             aria-controler="resume"
           >
-            Resume
+            resume
           </button>
+
+        
+
         </p>
 
         <p>
           <div class="collapse" id="jobHistory">
-            <div class="card card-block">
+            <div class="card card-block breadcrumb blogcrumb">
               813 Construction (june 2013 - nov 2016)
             </div>
-            <div class="card card-block">
+            <div class="card card-block breadcrumb blogcrumb">
               CNA @ Cascades at Riverwalk (nov 2016 - sept 2017)
             </div>
           </div>
 
           <div class="collapse" id="education">
-            <div class="card card-block">
+            <div class="card card-block breadcrumb blogcrumb">
               School 1
             </div>
-            <div class="card card-block">
+            <div class="card card-block breadcrumb blogcrumb">
               School 2
             </div>
-            <div class="card card-block">
+            <div class="card card-block breadcrumb blogcrumb">
               School 3
             </div>
-
-          <div class="collapse" id="education">
-                This is where my stupid resume will go
           </div>
+
+          <div class="collapse" id="resume">
+            <div class="card card-block breadcrumb blogcrumb">
+              <span class="button_link">Here is a link to my <%= link_to "Resume", "/Christian_VanderVeurs_resume.pdf", {:style=>'color:#4b6384;'} %>!</span>
+            </div>
+          </div>
+          
         </p>
       </div>
     </div>
