@@ -7,13 +7,15 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "profile.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+        <h4 style="margin-top: 10px; ">Time spent:</h4>
+        <hr>
         <div class="skills">
           <% @skills.each do |skill| %>
             <div class="skill">
               <h4><%= skill.title %></h4>
               <div class="progress">
                 <div
-                  class="progress-bar bg"
+                  class="progress-bar bg-secondary"
                   role="progressbar"
                   aria-valuenow="<%= skill.percent_utilized %>"
                   aria-valuemax="100"
@@ -64,7 +66,7 @@
             aria-expanded="false"
             aria-controler="resume"
           >
-            resume
+            Resume
           </button>
 
         
@@ -95,7 +97,7 @@
 
           <div class="collapse" id="resume">
             <div class="card card-block breadcrumb blogcrumb">
-              <span class="button_link">Here is a link to my <%= link_to "Resume", "/Christian_VanderVeurs_resume.pdf", {:style=>'color:#4b6384;', :target => "_blank"} %>!</span>
+              <span class="button_link">Here is a link to my <%= link_to "Resume", "/Christians.pdf", {:style=>'color:#4b6384;', :target => "_blank"} %>!</span>
             </div>
           </div>
           
